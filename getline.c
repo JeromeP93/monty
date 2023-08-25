@@ -44,7 +44,8 @@ return (chars_read);
  * @lineptr: Buffer where the line is stored.
  * @bufsize: Size of the buffer.
  * @stream: Input stream to read from.
- * Returns: Number of characters read on success, -1 on failure or EOF.
+ *
+ * Return: Number of characters read on success, -1 on failure or EOF.
  */
 ssize_t read_line(char **lineptr, size_t bufsize, FILE *stream)
 {
@@ -89,7 +90,8 @@ return (chars_read);
  * resize_buffer - Resize and reallocate a buffer.
  * @lineptr: Pointer to the buffer to be resized.
  * @new_size: New size of the buffer.
- * Returns: 0 on success, -1 on failure.
+ *
+ * Return: 0 on success, -1 on failure.
  */
 ssize_t resize_buffer(char **lineptr, size_t new_size)
 {
